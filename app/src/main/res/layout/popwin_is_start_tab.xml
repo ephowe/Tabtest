@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:id="@+id/layout_dialog">
+                <TextView android:id="@+id/tv_popwin_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="就餐人数:"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_popwin_pax"
+                    android:text="1"
+                    android:textSize="14dp"
+                    android:layout_centerHorizontal="true"
+                    android:singleLine="true"
+                    android:maxLength="2"
+                    android:layout_gravity="center_vertical"
+                    android:numeric="integer" />
+</LinearLayout>

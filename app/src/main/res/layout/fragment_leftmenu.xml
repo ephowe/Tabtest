@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8c8c8"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/tv_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/launch_intro"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/it_left"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Button android:id="@+id/bt_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/launch_click_me"
+            android:layout_gravity="center_horizontal" />
+
+        <Button android:id="@+id/bt_tbllist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/launch_tbl"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftmenu_et_serach"
+        android:hint="菜品搜索"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:layout_gravity="center_vertical" />
+
+    <ListView
+        android:id="@+id/leftmenu_lv_food_serach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:background="#e6969696"
+        android:clickable="false"
+        android:numColumns="3"
+        android:touchscreenBlocksFocus="false"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/m_toolbar" />
+
+</LinearLayout>  

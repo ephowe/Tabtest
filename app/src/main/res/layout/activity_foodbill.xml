@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FooditemActivity"
+    android:background="#c8c8c8c8">
+
+    <!--Toolbar-->
+    <include layout="@layout/activity_main_toolbar"
+        android:id="@+id/m_toolbar" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/m_toolbar"
+        android:id="@+id/layout_foodbill_serach_food"
+        android:gravity="center_horizontal">
+        <Spinner
+            android:id="@+id/sp_foodbill_food"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_foodbill_serach_food"
+            android:hint="菜品搜索"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:background="#50000000"
+            android:textColor="#f0f2f2f2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_foodbill_unit"/>
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_foodbill_food_cnt"
+            android:text="1"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:maxLength="2"
+            android:layout_gravity="center_vertical"
+            android:numeric="integer" />
+        <Button
+            android:id="@+id/bt_foodbill_add_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="添加"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/layout_foodbill_serach_food"
+        android:id="@+id/layout_foodbill_serach_attach"
+        android:gravity="center_horizontal">
+        <Spinner
+            android:id="@+id/sp_foodbill_attach"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+        <EditText
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_foodbill_serach_attach"
+            android:hint="附加项搜索"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_gravity="center_vertical" />
+        <Button
+            android:id="@+id/bt_foodbill_add_attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="添加"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/layout_foodbill_serach_attach"
+        android:id="@+id/layout_foodbill_bts"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="附加项:"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_foodbill_attachs" />
+        <Button
+            android:id="@+id/bt_foodbill_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="发送" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/bill_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:background="#e6969696"
+        android:clickable="false"
+        android:numColumns="3"
+        android:touchscreenBlocksFocus="false"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_foodbill_bts" />
+
+
+</RelativeLayout>

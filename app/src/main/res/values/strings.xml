@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tab test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+
+    <string name="common_intro">test</string>
+    <string name="launch_click_me">更新菜单</string>
+    <string name="launch_tbl">显示台位</string>
+    <string name="launch_intro">Done.</string>
+    <string name="nav_desc">test333</string>
+    <string name="start_tbl">确认开台</string>
+    <string name="open">Open drawer</string>
+    <string name="close">Close drawer</string>
+
+</resources>

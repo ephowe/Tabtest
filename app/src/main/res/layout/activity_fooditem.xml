@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FooditemActivity"
+    android:background="#c8c8c8c8">
+
+    <!--Toolbar-->
+    <include layout="@layout/activity_main_toolbar"
+        android:id="@+id/m_toolbar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_big_pic"
+        android:layout_below="@+id/m_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/iv_big_pic"
+        android:id="@+id/layout_fooditem_serach">
+
+        <Spinner
+            android:id="@+id/sp_attach"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_serach"
+            android:hint="附加项搜索"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_gravity="center_vertical" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

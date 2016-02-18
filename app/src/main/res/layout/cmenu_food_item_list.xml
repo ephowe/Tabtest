@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/it_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/it_food_small_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/it_food_small_pic"
+            android:text="菜品名"
+            android:background="#50000000"
+            android:textColor="#f0f2f2f2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/it_food_des"
+            android:layout_gravity="center_horizontal|bottom">
+        </TextView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/it_food"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/it_caption"
+            android:layout_gravity="center_horizontal|left"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/it_food_small_pic"
+                android:text="价格:"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/it_price_title"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginLeft="1dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/it_food_small_pic"
+                android:text="会员价:"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/it_member_title"
+                android:layout_gravity="center_horizontal|left"
+                android:layout_marginLeft="1dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|right"
+            android:id="@+id/it_value"
+            android:layout_weight="0.4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/it_food_small_pic"
+                android:text="价格"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/it_price_val"
+                android:layout_gravity="center_horizontal|right">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/it_food_small_pic"
+                android:text="会员价"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/it_member_price_val"
+                android:layout_gravity="center_horizontal|right">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|right"
+            android:id="@+id/it_unit"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/it_food_small_pic"
+                android:text="元"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/it_price_unit"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginRight="1dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/it_food_small_pic"
+                android:text="元"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/it_member_price_unit"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginRight="1dp">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
